@@ -1,0 +1,12 @@
+var autoclicker = setInterval(function(){
+  try {
+    document.getElementById('bigCookie').click();
+  } catch (err) {
+    clearInterval();
+  }
+}, 10);
+
+
+to stop autoclicker - copy and paste line 12 into browser console
+
+clearInterval(autoclicker);
